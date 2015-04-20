@@ -21,8 +21,6 @@ Version 0.0.1
 
 our $VERSION = '0.0.1';
 
-my $settings = plugin_setting;
-
 has secret_key => (
   is => 'ro',
   required => 1

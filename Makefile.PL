@@ -1,8 +1,5 @@
-
-
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
+
 WriteMakefile(
     NAME         => 'Dancer::Plugin::Queue::SQS',
     VERSION_FROM => 'lib/Dancer/Plugin/Queue/SQS.pm', # finds \$VERSION
@@ -15,7 +12,9 @@ WriteMakefile(
     PREREQ_PM => {
         'Dancer' => 0,
         'Amazon::SQS::Simple' => '2.03',
-        'Moo' => '2.000001'
+        'Moo' => '2.000001',
+        'namespace::autoclean' => 0,
+        'Dancer::Plugin::Queue' => '0.002'
     },
     TEST_REQUIRES => {
         'YAML' => 0,
