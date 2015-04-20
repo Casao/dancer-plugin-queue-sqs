@@ -1,0 +1,8 @@
+MANIFEST
+README
+LICENSE
+Todo
+Changes
+Makefile.PL
+lib/Dancer/Plugin/Queue/SQS.pm
+t/001_load.t
