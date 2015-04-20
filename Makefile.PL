@@ -7,7 +7,7 @@ WriteMakefile(
     NAME         => 'Dancer::Plugin::Queue::SQS',
     VERSION_FROM => 'lib/Dancer/Plugin/Queue/SQS.pm', # finds \$VERSION
     AUTHOR       => 'Colin Ewen (colin@draecas.com)',
-    ABSTRACT     => 'Module abstract (<= 44 characters) goes here',
+    ABSTRACT     => 'SQS Adapter for Dancer::Plugin::Queue',
     LICENSE          => 'artistic_2',
     BUILD_REQUIRES => {
         'Test::More' => 0,
@@ -24,3 +24,4 @@ WriteMakefile(
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Dancer-Plugin-Queue-SQS-*' },
 );
+
