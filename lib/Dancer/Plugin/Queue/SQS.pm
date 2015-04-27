@@ -62,7 +62,7 @@ sub add_msg {
 sub get_msg {
   my ($self) = @_;
   my $msg = $self->queue->ReceiveMessage();
-  return ( $msg, $msg->MessageBody() );
+  return ( $msg, $msg->MessageBody() ) if $msg;
 }
 
 sub remove_msg {
